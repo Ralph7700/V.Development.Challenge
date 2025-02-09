@@ -1,0 +1,6 @@
+@VeerBackend.WebApi_HostAddress = http://localhost:5184
+
+GET {{VeerBackend.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
