@@ -23,8 +23,8 @@ builder.Host.UseSerilog((context, configuration) =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("DevCORSPolicy", policyBuilder => policyBuilder
-            //this policy is only for development
-        .WithOrigins("http://localhost:5173")
+        //this policy is only for development
+        .AllowAnyOrigin()
         .AllowAnyMethod()
         .AllowAnyHeader());
 });
